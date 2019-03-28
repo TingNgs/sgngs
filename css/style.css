@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+#chart-container div {
+  width: 100% !important;
+  height: 100% !important;
+}
+#chart-container div canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+app-root {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+p {
+  color: #005fa4;
+  word-wrap: break-word;
+}
+h2,
+h5 {
+  color: #004577;
+  word-wrap: break-word;
+}
+.container {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.hide_page {
+  display: none;
+}
