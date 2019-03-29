@@ -319,13 +319,24 @@ function MusicControl() {
 function ChangePageFunction(pageNumber) {
   let page;
   document.getElementById('aboutme').classList.add('hide_page');
-  if (pageNumber === 0) {
+  document.getElementById('portfolio_content').classList.add('hide_page');
+  document.getElementById('skill_content').classList.add('hide_page');
+  document.getElementById('todo_content').classList.add('hide_page');
+  if (pageNumber == 0) {
     page = 'about_me';
     document.getElementById('aboutme').classList.remove('hide_page');
   }
-  if (pageNumber === 1) {
+  if (pageNumber == 1) {
     page = 'portfolio';
-    document.getElementById('portfolio').classList.remove('hide_page');
+    document.getElementById('portfolio_content').classList.remove('hide_page');
+  }
+  if (pageNumber == 2) {
+    page = 'skill';
+    document.getElementById('skill_content').classList.remove('hide_page');
+  }
+  if (pageNumber == 3) {
+    page = 'todo';
+    document.getElementById('todo_content').classList.remove('hide_page');
   }
   location.href = '#' + page;
 }

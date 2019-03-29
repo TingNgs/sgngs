@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/name.css" />
+    <link rel="stylesheet" href="./css/aboutme.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -13,7 +14,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>Ting NGs - Personal Resume Website</title>
   </head>
   <body>
     <header>
@@ -326,6 +327,7 @@
                 style="transform-origin: 0px 0px 0px;"
                 data-svg-origin="337.0625 193.5390625"
                 transform="matrix(1,0,0,1,214.71263682485585,123.63294274500878)"
+                onclick="ChangePageFunction(2)"
               >
                 <g class="icon-wrapper">
                   <circle r="38" cx="325" cy="175"></circle>
@@ -347,6 +349,7 @@
                 style="transform-origin: 0px 0px 0px;"
                 data-svg-origin="344.4609375 193.5390625"
                 transform="matrix(1,0,0,1,250,0)"
+                onclick="ChangePageFunction(3)"
               >
                 <g class="icon-wrapper">
                   <circle r="38" cx="325" cy="175"></circle>
@@ -454,6 +457,7 @@
               viewBox="0 0 1428.3 445.9"
               style="enable-background:new 0 0 1428.3 445.9;"
               xml:space="preserve"
+              alt="Ting NGs"
             >
               <style type="text/css">
                 .st0 {
@@ -581,8 +585,15 @@
             <div class="row">
               <div class="col-md-10">
                 <p>
-                  i am so happy. i am so happy. i am so happy. i am so happy. i
-                  am so happy. i am so happy.
+                  Hi, I'm Ting NGs. A undergraduate student studying computer
+                  science.
+                  <br /><br />
+                  I enjoy programming and front-end development, and I studying
+                  hard for it. There are always new technologies to learn. I
+                  also interested in design, music, traveling, photography.
+                  <br /><br />
+                  As for the future, I want to focus on UI/UX design and backend
+                  to become a Full Stack developer. <br />:D
                 </p>
               </div>
             </div>
@@ -592,25 +603,26 @@
               <div class="col-12"><h2>Details</h2></div>
             </div>
             <div class="row">
-              <div class="col-12">
+              <div class="col-10">
                 <div>
                   <h5>Name:</h5>
                   <p>Ng Ho Ting ( 吳浩廷 )</p>
                 </div>
               </div>
-              <div class="col-12">
+              <div class="col-10">
                 <div>
                   <h5>Age:</h5>
                   <p>21</p>
                 </div>
+                <div id="HK_flag"></div>
               </div>
-              <div class="col-12">
+              <div class="col-10">
                 <div>
                   <h5>From:</h5>
                   <p>Hong Kong</p>
                 </div>
               </div>
-              <div class="col-12">
+              <div class="col-10">
                 <div>
                   <h5>Studying in:</h5>
                   <p>Taiwan</p>
@@ -669,6 +681,9 @@
           </div>
         </div>
       </div>
+      <div id="portfolio_content" class="hide_page">portfolio work</div>
+      <div id="skill_content" class="hide_page">skill work</div>
+      <div id="todo_content" class="hide_page">todo work</div>
     </div>
   </body>
   <script
