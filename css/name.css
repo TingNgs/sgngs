@@ -25,11 +25,10 @@
 }
 #name path,
 #name rect {
-  stroke: #fff;
-
+  stroke: #005fa4;
   fill: #005fa4;
   stroke-dasharray: 1800;
-  opacity: 10;
+
   animation: animate 3.5s cubic-bezier(0, 0.23, 1, 0.1);
 }
 #name rect {
@@ -40,27 +39,15 @@
 }
 @keyframes animate {
   0% {
-    opacity: 0;
     fill: none;
     stroke-dashoffset: 1800;
     stroke-width: 5px;
   }
-  30% {
-    opacity: 10;
-    fill: none;
-  }
-  80% {
-    fill: rgba(#fff, 0);
-    stroke-dashoffset: 0;
-    stroke-width: 5px;
-  }
-  90% {
-    fill: rgba(#fff, 1);
-    stroke-dashoffset: 0;
-    stroke-width: 2px;
+  50% {
+    fill: rgb(0, 95, 164, 0);
   }
   100% {
-    fill: #005fa4;
+    fill: rgba(0, 95, 164, 1);
     stroke-dashoffset: 0;
   }
 }

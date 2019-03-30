@@ -7,12 +7,11 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/name.css" />
     <link rel="stylesheet" href="./css/aboutme.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <title>Ting NGs - Personal Resume Website</title>
   </head>
@@ -417,7 +416,7 @@
       </div>
     </header>
     <div class="name">
-      <div id="whole_div"></div>
+      <!--<div id="whole_div"></div>-->
       <div id="name" class="container-fluid">
         <div class="row">
           <div class="col-lg-4 col-md-3 col-3 line">
@@ -575,7 +574,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div id="main" class="container">
       <div id="aboutme" class="hide_page">
         <div class="row">
           <div class="col-md-6">
@@ -585,12 +584,13 @@
             <div class="row">
               <div class="col-md-10">
                 <p>
-                  Hi, I'm Ting NGs. A undergraduate student studying computer
+                  Hi, I'm Ting NGs, a undergraduate student, studying computer
                   science.
                   <br /><br />
-                  I enjoy programming and front-end development, and I studying
-                  hard for it. There are always new technologies to learn. I
-                  also interested in design, music, traveling, photography.
+                  I enjoy programming and front-end development, and I'm
+                  studying hard for it. There are always new technologies to
+                  learn. I also interested in design, music, traveling,
+                  photography.
                   <br /><br />
                   As for the future, I want to focus on UI/UX design and backend
                   to become a Full Stack developer. <br />:D
@@ -681,27 +681,256 @@
           </div>
         </div>
       </div>
-      <div id="portfolio_content" class="hide_page">portfolio work</div>
+      <div id="portfolio_content" class="hide_page">
+        <div class="row">
+          <div class="col-12"><h2>Portfolio</h2></div>
+        </div>
+        <div class="row row-eq-height">
+          <div class="col-xl-4 col-md-6 col-12 portfolio_Card">
+            <div class="card_box">
+              <div class="row card_h">
+                <div class="card-flip">
+                  <div class="flip">
+                    <div
+                      class="back"
+                      style="background-image: url(./img/portfolio/sgngs.png);"
+                    >
+                      <div class="back_box">
+                        <div>
+                          <a
+                            href="https://github.com/ngSgn/sgngs"
+                            target="_blank"
+                            ><p>Github</p></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card_bg"
+                      style="background-image: url(./img/portfolio/sgngs.png);"
+                    ></div>
+                    <div class="front">
+                      <div class="portfolio_box_des">
+                        <h5>sgngs.com</h5>
+                        <hr />
+                        <p>
+                          Android final project. An android app use for search
+                          empty classroom in NTUT.
+                        </p>
+                      </div>
+
+                      <div class="tech_row">
+                        <hr />
+                        <div class="tech_box">Bootstrap</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-12 portfolio_Card">
+            <div class="card_box">
+              <div class="row card_h">
+                <div class="card-flip">
+                  <div class="flip">
+                    <div
+                      class="back"
+                      style="background-image: url(./img/portfolio/tt-iwatch.png);"
+                    >
+                      <div class="back_box">
+                        <div>
+                          <a
+                            href="https://github.com/thianhe/TT-iwatchStore"
+                            target="_blank"
+                            ><p>Github</p></a
+                          >
+                          <a href="https://youtu.be/3xBdWTHWdL0" target="_blank"
+                            ><p>Demo Video</p></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card_bg"
+                      style="background-image: url(./img/portfolio/tt-iwatch.png);"
+                    ></div>
+                    <div class="front">
+                      <div class="portfolio_box_des">
+                        <h5>TT-iwatchStore</h5>
+                        <hr />
+                        <p>
+                          Database and Information Security final project. Build
+                          a e-commerce system that sell smart watch.
+                        </p>
+                      </div>
+
+                      <div class="tech_row">
+                        <hr />
+                        <div class="tech_box">PHP</div>
+                        <div class="tech_box">MySQL</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6 col-12 portfolio_Card">
+            <div class="card_box">
+              <div class="row card_h">
+                <div class="card-flip">
+                  <div class="flip">
+                    <div
+                      class="back"
+                      style="background-image: url(./img/portfolio/isaac.png);"
+                    >
+                      <div class="back_box">
+                        <div>
+                          <a
+                            href="https://github.com/thianhe/OopLab"
+                            target="_blank"
+                            ><p>Github</p></a
+                          >
+                          <a
+                            href="https://thianhe.github.io/OopLab/"
+                            target="_blank"
+                            ><p>Play Game</p></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card_bg"
+                      style="background-image: url(./img/portfolio/isaac.png);"
+                    ></div>
+                    <div class="front">
+                      <div class="portfolio_box_des">
+                        <h5>Imitation Game - The Binding of Isaac</h5>
+                        <hr />
+                        <p>
+                          Oop Lab final project. Imitate a game (The Binding of
+                          Isaac) by using professor's JS framework.
+                        </p>
+                      </div>
+
+                      <div class="tech_row">
+                        <hr />
+                        <div class="tech_box">JavaScript</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 portfolio_Card">
+              <div class="card_box">
+                <div class="row card_h">
+                  <div class="card-flip">
+                    <div class="flip">
+                      <div
+                        class="back"
+                        style="background-image: url(./img/portfolio/ntut_hksd.png);"
+                      >
+                        <div class="back_box">
+                          <div>
+                            <a
+                              href="https://github.com/ngSgn/FinalWebProject"
+                              target="_blank"
+                              ><p>Github</p></a
+                            >
+                            <a
+                              href="https://ngsgn.github.io/FinalWebProject/"
+                              target="_blank"
+                              ><p>Demo</p></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="card_bg"
+                        style="background-image: url(./img/portfolio/ntut_hksd.png);"
+                      ></div>
+                      <div class="front">
+                        <div class="portfolio_box_des">
+                          <h5>NTUT HKST</h5>
+                          <hr />
+                          <p>
+                            Web programming final project. A register system for
+                            NTUT's oversea chinese student.
+                          </p>
+                        </div>
+  
+                        <div class="tech_row">
+                          <hr />
+                          <div class="tech_box">Firebase</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="col-xl-4 col-md-6 col-12 portfolio_Card">
+            <div class="card_box">
+              <div class="row card_h">
+                <div class="card-flip">
+                  <div class="flip">
+                    <div
+                      class="back"
+                      style="background-image: url(./img/portfolio/NTUT_emptyClassroom.png);"
+                    >
+                      <div class="back_box">
+                        <div>
+                          <a
+                            href="https://github.com/ngSgn/ntutAndroidFinal"
+                            target="_blank"
+                            ><p>Github</p></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card_bg"
+                      style="background-image: url(./img/portfolio/NTUT_emptyClassroom.png);"
+                    ></div>
+                    <div class="front">
+                      <div class="portfolio_box_des">
+                        <h5>NTUT Empty Classroom</h5>
+                        <hr />
+                        <p>
+                          Android final project. An android app use for search
+                          empty classroom in NTUT.
+                        </p>
+                      </div>
+
+                      <div class="tech_row">
+                        <hr />
+                        <div class="tech_box">Android</div>
+                        <div class="tech_box">Firebase</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
       <div id="skill_content" class="hide_page">skill work</div>
       <div id="todo_content" class="hide_page">todo work</div>
     </div>
   </body>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"
-  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
   <script src="./js/CircularAudioWave.js"></script>
   <script src="./js/nav.js"></script>
 </html>

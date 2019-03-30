@@ -18,7 +18,7 @@ app-root {
 }
 p {
   color: #005fa4;
-  word-wrap: break-word;
+  word-wrap: break-all;
 }
 h2,
 h5 {
@@ -32,4 +32,21 @@ h5 {
 
 .hide_page {
   display: none;
+}
+
+#aboutme,
+#portfolio_content,
+#skill_content,
+#todo_content {
+  animation-name: main_in;
+  animation-duration: 1s;
+  opacity: 1;
+}
+@keyframes main_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

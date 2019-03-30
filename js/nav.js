@@ -237,7 +237,7 @@ setTimeout(() => {
   } else {
     InitChange(0);
   }
-}, 500);
+}, 3000);
 
 window.addEventListener(
   'resize',
