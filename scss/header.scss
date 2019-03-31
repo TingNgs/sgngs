@@ -1,3 +1,5 @@
+$main_color: #005fa4;
+$pointer_color: #3b8fc0;
 #box {
   position: absolute;
   width: 100%;
@@ -59,7 +61,7 @@
   fill-opacity: 1;
 }
 #learn-more:hover ~ .learn-more-text {
-  fill: #005fa4;
+  fill: $main_color;
 }
 .learn-more-text {
   font-family: 'Roboto';
@@ -69,12 +71,12 @@
   transition: all 250ms ease-in;
 }
 .center {
-  fill: #005fa4;
+  fill: $main_color;
 }
 .pointer,
 .pointerB {
   fill: #fff;
-  stroke: #3b8fc0;
+  stroke: $pointer_color;
   stroke-width: 2;
 }
 .nav-copy {
@@ -102,7 +104,7 @@
   transition: all 250ms ease-in;
 }
 .service circle {
-  fill: #005fa4;
+  fill: $main_color;
 }
 .service circle.shadow {
   fill-opacity: 0;
