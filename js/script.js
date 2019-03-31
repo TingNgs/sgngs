@@ -3,7 +3,7 @@ function flipFrame() {
 }
 $('.card-flip').click(function() {
   console.log('yo');
-  $(this).addClass('hover');
+  $(this).toggleClass('hover');
   setTimeout(() => {
     $(this).removeClass('hover');
   }, 2000);
