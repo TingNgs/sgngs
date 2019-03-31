@@ -144,7 +144,6 @@
 
           for (i in upcomingResultTemp) {
             upcomingResult.push(upcomingResultTemp[i]);
-            console.log(upcomingResultTemp[i]);
             upcomingCounter++;
           }
 
