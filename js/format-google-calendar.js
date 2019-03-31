@@ -296,7 +296,7 @@
             description = result.description || '',
             location = result.location || '',
             i;
-          if (result.transparency !== 'undefined') {
+          if (result.transparency === 'transparent') {
             output = '<' + tagName + ' class="finished">';
           }
           for (i = 0; i < format.length; i++) {
