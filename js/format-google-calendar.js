@@ -137,6 +137,7 @@
               }
             } else {
               upcomingResultTemp.push(result[i]);
+              console.log(result[i]);
             }
           }
 
