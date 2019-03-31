@@ -4,12 +4,17 @@
   position: relative;
   perspective: 1000px;
 }
-.card-flip:hover .flip {
-  transform: rotateY(180deg);
-}
+
 .card-flip.hover .flip {
   transform: rotateY(180deg);
 }
+
+@media not all and (pointer: coarse) {
+  .card-flip:hover .flip {
+    transform: rotateY(180deg);
+  }
+}
+
 .card_bg {
   position: absolute;
   opacity: 0.1;
