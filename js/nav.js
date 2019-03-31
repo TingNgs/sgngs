@@ -237,7 +237,8 @@ setTimeout(() => {
   } else {
     InitChange(0);
   }
-}, 3000);
+  document.getElementById('name').classList.add('afterAnim');
+}, 2500);
 
 window.addEventListener(
   'resize',
