@@ -237,7 +237,7 @@ setTimeout(() => {
   } else {
     InitChange(0);
   }
-  document.getElementById('name').classList.add('afterAnim');
+  //document.getElementById('name').classList.add('afterAnim');
 }, 2500);
 
 window.addEventListener(
