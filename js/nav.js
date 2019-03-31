@@ -234,6 +234,10 @@ setTimeout(() => {
   console.log(path);
   if (path.search('portfolio') != -1) {
     InitChange(1);
+  } else if (path.search('skill') != -1) {
+    InitChange(5);
+  } else if (path.search('todo') != -1) {
+    InitChange(6);
   } else {
     InitChange(0);
   }
@@ -331,11 +335,11 @@ function ChangePageFunction(pageNumber) {
     page = 'portfolio';
     document.getElementById('portfolio_content').classList.remove('hide_page');
   }
-  if (pageNumber == 2) {
+  if (pageNumber == 5 || pageNumber == 2) {
     page = 'skill';
     document.getElementById('skill_content').classList.remove('hide_page');
   }
-  if (pageNumber == 3) {
+  if (pageNumber == 6 || pageNumber == 3) {
     page = 'todo';
     document.getElementById('todo_content').classList.remove('hide_page');
   }

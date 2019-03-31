@@ -1,0 +1,41 @@
+.skillStar {
+  float: right;
+  span {
+    color: #aaaaaa;
+  }
+  span.checked {
+    color: rgb(25, 181, 233);
+  }
+}
+.skill_name {
+  float: left;
+}
+
+#skill_content h2 {
+  margin-bottom: 15px;
+}
+.skill_name {
+  height: 100%;
+}
+.skill_name p {
+  margin: 8px 0;
+}
+
+.skillStar {
+  margin-top: 6px;
+}
+.skill_box {
+  margin-bottom: 10px;
+  &:hover {
+    background-color: #f3f3f3;
+  }
+}
+.skillStar span {
+  -webkit-transition: font-size 0.5s ease;
+  -moz-transition: font-size 0.5s ease;
+  -o-transition: font-size 0.5s ease;
+  transition: font-size 0.5s ease;
+}
+.skill_box:hover .skillStar span {
+  font-size: 120%;
+}
