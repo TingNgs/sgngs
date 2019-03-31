@@ -143,10 +143,9 @@
           upcomingResultTemp.reverse();
 
           for (i in upcomingResultTemp) {
-              upcomingResult.push(upcomingResultTemp[i]);
-              console.log(upcomingResultTemp[i]);
-              upcomingCounter++;
-            }
+            upcomingResult.push(upcomingResultTemp[i]);
+            console.log(upcomingResultTemp[i]);
+            upcomingCounter++;
           }
 
           for (i in upcomingResult) {
