@@ -22,14 +22,14 @@ $pointer_color: #3b8fc0;
 }
 .navContainer div {
   animation-name: oxxo;
-  animation-duration: 4.5s;
+  animation-duration: 4s;
   opacity: 1;
 }
 @keyframes oxxo {
   0% {
     opacity: 0;
   }
-  80% {
+  65% {
     opacity: 0;
   }
   100% {
