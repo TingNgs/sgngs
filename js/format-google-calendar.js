@@ -143,7 +143,6 @@
           upcomingResultTemp.reverse();
 
           for (i in upcomingResultTemp) {
-            if (upcomingCounter < settings.upcomingTopN) {
               upcomingResult.push(upcomingResultTemp[i]);
               console.log(upcomingResultTemp[i]);
               upcomingCounter++;
