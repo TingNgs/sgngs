@@ -1,0 +1,67 @@
+#whole_div {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #005fa4;
+  opacity: 0;
+  pointer-events: none;
+  animation: animateBack 3.5s;
+  z-index: 99;
+}
+#name {
+  position: relative;
+  height: auto;
+  z-index: 100;
+}
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line div {
+  width: 100%;
+}
+#name path,
+#name rect {
+  stroke: #005fa4;
+  fill: #005fa4;
+  stroke-dasharray: 1800;
+
+  animation: animate 3.5s cubic-bezier(0, 0.23, 1, 0.1);
+}
+#name rect {
+  stroke-width: 0px;
+}
+#name path {
+  stroke-width: 2px;
+}
+@keyframes animate {
+  0% {
+    fill: none;
+    stroke-dashoffset: 1800;
+    stroke-width: 5px;
+  }
+  50% {
+    fill: rgba(0, 95, 164, 0);
+  }
+  100% {
+    fill: rgba(0, 95, 164, 1);
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes animateBack {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: all;
+  }
+}
