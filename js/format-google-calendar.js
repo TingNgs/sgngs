@@ -149,17 +149,6 @@
             }
           }
 
-          for (i in pastResult) {
-            pastElem.insertAdjacentHTML(
-              'beforeend',
-              transformationList(
-                pastResult[i],
-                settings.itemsTagName,
-                settings.format
-              )
-            );
-          }
-
           for (i in upcomingResult) {
             upcomingElem.insertAdjacentHTML(
               'beforeend',
@@ -176,10 +165,6 @@
               'beforebegin',
               settings.upcomingHeading
             );
-          }
-
-          if (pastElem.firstChild) {
-            pastElem.insertAdjacentHTML('beforebegin', settings.pastHeading);
           }
         };
 
@@ -297,7 +282,7 @@
             location = result.location || '',
             i;
           if (result.transparency === 'transparent') {
-            output = '<' + tagName + ' class="finished">';
+            output = '<' + tagName + ' class="checked">';
           }
           for (i = 0; i < format.length; i++) {
             format[i] = format[i].toString();
@@ -701,7 +686,7 @@
               itemsTagName: 'li',
               upcomingSelector: '#events-upcoming',
               pastSelector: '#events-past',
-              upcomingHeading: '<h2>Upcoming events</h2>',
+              upcomingHeading: '<h2>To-Do List</h2>',
               pastHeading: '<h2>Past events</h2>',
               format: [
                 '*date*',

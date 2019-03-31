@@ -10,7 +10,7 @@ formatGoogleCalendar.init({
   itemsTagName: 'li',
   upcomingSelector: '#events-upcoming',
   recurringEvents: true,
-  upcomingHeading: '<h2>Upcoming events</h2>',
+  upcomingHeading: '<h2>To-Do List</h2>',
   pastHeading: '<h2>Past events</h2>',
   format: ['*date*', ': ', '*summary*', ' — ', '*description*'],
   timeMin: '2016-06-03T10:00:00-07:00',
