@@ -225,8 +225,6 @@ var twn_pointer_path = new TimelineMax({ paused: true });
 
 createPointer();
 
-console.log('yo');
-
 //Adding it immediately triggers a bug for the transform
 setTimeout(() => jQuery('#service-collection .serv-0').addClass('active'), 200);
 setTimeout(() => {

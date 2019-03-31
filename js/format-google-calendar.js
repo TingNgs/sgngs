@@ -137,7 +137,6 @@
               }
             } else {
               upcomingResultTemp.push(result[i]);
-              console.log(result[i]);
             }
           }
 
@@ -146,6 +145,7 @@
           for (i in upcomingResultTemp) {
             if (upcomingCounter < settings.upcomingTopN) {
               upcomingResult.push(upcomingResultTemp[i]);
+              console.log(upcomingResultTemp[i]);
               upcomingCounter++;
             }
           }
