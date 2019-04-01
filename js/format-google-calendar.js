@@ -130,6 +130,7 @@
           }
 
           for (i in result) {
+            console.log(result[i]);
             if (isPast(result[i].end.dateTime || result[i].end.date)) {
               if (pastCounter < settings.pastTopN) {
                 pastResult.push(result[i]);
@@ -258,7 +259,7 @@
             dayNames = config.dayNames,
             moreDaysEvent = true,
             isAllDayEvent = isAllDay(dateStart, dateEnd);
-
+          console.log(dateStart);
           if (typeof result.end.date !== 'undefined') {
             dateEnd = subtractOneDay(dateEnd);
           }

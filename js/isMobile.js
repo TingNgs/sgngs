@@ -1,30 +1,23 @@
 $('.card-flip').click(function() {
   if (isMobileBool) $(this).toggleClass('hover');
 });
-var isMobile = {
-  Android: function() {
-    return navigator.userAgent.match(/Android/i);
-  },
-  BlackBerry: function() {
-    return navigator.userAgent.match(/BlackBerry/i);
-  },
-  iOS: function() {
-    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-  },
-  Opera: function() {
-    return navigator.userAgent.match(/Opera Mini/i);
-  },
-  Windows: function() {
-    return navigator.userAgent.match(/IEMobile/i);
-  },
-  any: function() {
-    return (
-      isMobile.Android() ||
-      isMobile.BlackBerry() ||
-      isMobile.iOS() ||
-      isMobile.Opera() ||
-      isMobile.Windows()
-    );
+$('.skill_box').click(function() {
+  if (isMobileBool) $(this).toggleClass('hover');
+});
+function detectmob() {
+  if (
+    navigator.userAgent.match(/Android/i) ||
+    navigator.userAgent.match(/webOS/i) ||
+    navigator.userAgent.match(/iPhone/i) ||
+    navigator.userAgent.match(/iPad/i) ||
+    navigator.userAgent.match(/iPod/i) ||
+    navigator.userAgent.match(/BlackBerry/i) ||
+    navigator.userAgent.match(/Windows Phone/i)
+  ) {
+    return true;
+  } else {
+    return false;
   }
-};
-var isMobileBool = isMobile.any();
+}
+var isMobileBool = detectmob();
+console.log(isMobileBool);

@@ -24,10 +24,36 @@
 .skillStar {
   margin-top: 6px;
 }
+
 .skill_box {
   margin-bottom: 10px;
+  .comment {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    p {
+      margin: 8px;
+      color: #fff;
+      text-align: center;
+    }
+  }
   &:hover {
-    background-color: #f3f3f3;
+    background-color: #e2e2e2;
+  }
+  &.hover {
+    background-color: #e2e2e2;
+  }
+  &:hover .skillStar span {
+    font-size: 120%;
+  }
+  &.hover .skillStar span {
+    font-size: 120%;
+  }
+  &:hover .comment p {
+    color: rgb(25, 181, 233);
+  }
+  &.hover .comment p {
+    color: rgb(25, 181, 233);
   }
 }
 .skillStar span {
@@ -35,7 +61,4 @@
   -moz-transition: font-size 0.5s ease;
   -o-transition: font-size 0.5s ease;
   transition: font-size 0.5s ease;
-}
-.skill_box:hover .skillStar span {
-  font-size: 120%;
 }
