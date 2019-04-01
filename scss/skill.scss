@@ -37,23 +37,29 @@
       text-align: center;
     }
   }
-  &:hover {
-    background-color: #e2e2e2;
-  }
+
   &.hover {
     background-color: #e2e2e2;
+    .skillStar span {
+      font-size: 120%;
+    }
+    .comment p {
+      color: rgb(25, 181, 233);
+    }
   }
-  &:hover .skillStar span {
-    font-size: 120%;
-  }
-  &.hover .skillStar span {
-    font-size: 120%;
-  }
-  &:hover .comment p {
-    color: rgb(25, 181, 233);
-  }
-  &.hover .comment p {
-    color: rgb(25, 181, 233);
+}
+
+@media not all and (pointer: coarse) {
+  .skill_box {
+    &:hover {
+      background-color: #e2e2e2;
+      .comment p {
+        color: rgb(25, 181, 233);
+      }
+      .skillStar span {
+        font-size: 120%;
+      }
+    }
   }
 }
 .skillStar span {

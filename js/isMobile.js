@@ -1,8 +1,10 @@
 $('.card-flip').click(function() {
   if (isMobileBool) $(this).toggleClass('hover');
+  $('.card-flip').removeClass('hover');
 });
 $('.skill_box').click(function() {
   if (isMobileBool) $(this).toggleClass('hover');
+  $('.skill_box').removeClass('hover');
 });
 function detectmob() {
   if (
