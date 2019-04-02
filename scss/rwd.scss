@@ -20,10 +20,10 @@
   content: '';
   position: fixed;
   left: -20px;
-  top: 230px;
+  top: 30%;
   border-radius: 500px;
   fill: antiquewhite;
-  background-color: rgb(69, 138, 184);
+  background-color: rgba(69, 138, 184, 0.5);
   z-index: 99;
   &::after {
     z-index: 2;
@@ -33,7 +33,7 @@
     position: absolute;
     left: 0;
     top: 17px;
-    border: 2px solid rgb(235, 235, 235);
+    border: 2px solid rgb(255, 255, 255);
     border-left: none;
     border-bottom: none;
     transform: rotate(45deg);
@@ -48,7 +48,7 @@
     position: absolute;
     left: 50%;
     top: 17px;
-    border: 2px solid rgb(235, 235, 235);
+    border: 2px solid rgb(255, 255, 255);
     transform: rotate(45deg);
     border-top: none;
     border-right: none;
@@ -56,7 +56,7 @@
     pointer-events: none;
   }
   &.open {
-    background-color: rgb(101, 170, 216);
+    background-color: rgba(101, 170, 216, 1);
   }
 }
 #mobile_nav {
