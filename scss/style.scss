@@ -34,7 +34,9 @@ h5 {
 .hide_page {
   display: none;
 }
-
+.hide_page_two {
+  display: none !important;
+}
 #about_me_content,
 #portfolio_content,
 #skill_content,
@@ -56,4 +58,7 @@ hr {
   width: 96%;
   height: 1px;
   margin: 0 auto;
+}
+html {
+  scroll-behavior: smooth;
 }

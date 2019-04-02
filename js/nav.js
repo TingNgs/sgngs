@@ -240,10 +240,19 @@ setTimeout(() => {
     InitChange(0);
   }
   document.getElementById('name').classList.add('afterAnim');
-  document.getElementById('contact_me').classList.remove('hide_page');
+  $('#mobile_nav_button').removeClass('non_click');
 }, 1500);
 setTimeout(() => {
-  document.getElementById('big_bg_back').classList.remove('hide_page');
+  document.getElementById('contact_me').classList.remove('hide_page_two');
+  document.getElementById('about_me_content').classList.remove('hide_page_two');
+  document
+    .getElementById('portfolio_content')
+    .classList.remove('hide_page_two');
+  document.getElementById('skill_content').classList.remove('hide_page_two');
+  document.getElementById('todo_content').classList.remove('hide_page_two');
+}, 3000);
+setTimeout(() => {
+  document.getElementById('big_bg_back').classList.remove('hide_page_two');
 }, 200);
 window.addEventListener(
   'resize',
@@ -258,6 +267,10 @@ window.addEventListener(
 
 function InitChange(class_index) {
   //Hides current text of the main bubble
+  $('#nav-fullscreen').removeClass('open');
+  $('#nav-overlay').removeClass('open');
+  $('#mobile_nav_button').removeClass('open');
+  $('#mobile_nav').removeClass('open');
   ChangePageFunction(class_index);
   jQuery('.service.active').removeClass('active');
   jQuery('.serv-' + class_index).addClass('active');
@@ -347,4 +360,11 @@ function ChangePageFunction(pageNumber) {
   setTimeout(() => {
     location.href = '#' + page;
   }, 200);
+}
+function mobileNavOnclick() {
+  console.log('yo');
+  $('#nav-fullscreen').toggleClass('open');
+  $('#nav-overlay').toggleClass('open');
+  $('#mobile_nav_button').toggleClass('open');
+  $('#mobile_nav').toggleClass('open');
 }

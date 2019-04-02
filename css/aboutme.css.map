@@ -1,7 +1,9 @@
 {
-  "version": 3,
-  "mappings": "AAAA,AAAA,QAAQ,AAAC,CACP,gBAAgB,CAAE,wBAAwB,CAC1C,eAAe,CAAE,OAAO,CACxB,iBAAiB,CAAE,SAAS,CAC5B,OAAO,CAAE,GAAG,CACZ,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,IAAI,CACZ,IAAI,CAAE,GAAG,CACT,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,CAAC,CACX",
-  "sources": ["../scss/about_me.scss"],
-  "names": [],
-  "file": "about_me.css"
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,AAAC,CACP,gBAAgB,CAAE,wBAAwB,CAC1C,eAAe,CAAE,OAAO,CACxB,iBAAiB,CAAE,SAAS,CAC5B,OAAO,CAAE,GAAG,CACZ,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,IAAI,CACZ,IAAI,CAAE,GAAG,CACT,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,CAAC,CACX",
+    "sources": [
+        "../scss/aboutme.scss"
+    ],
+    "names": [],
+    "file": "aboutme.css"
 }

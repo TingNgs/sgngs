@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/skill.css" />
     <link rel="stylesheet" href="./css/aboutme.css" />
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="./css/portfolio.css" />
     <link rel="stylesheet" href="./css/to_do.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/rwd.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -19,10 +21,21 @@
     <title>Ting NGs - Personal Resume Website</title>
   </head>
   <body>
+    <div id="mobile_nav_button" class="non_click hide_page"onclick="mobileNavOnclick()"></div>
+    <div id="mobile_nav"class="hide_page">
+      <div id="nav-overlay"></div>
+      <div id="nav-fullscreen">
+        <a href="#about_me_content"onclick="InitChange(0)"><div class="pages"><h1>About Me</h1></div></a>
+        <a href="#portfolio_content"onclick="InitChange(1)"><div class="pages"><h1>Portfolio</h1></div></a>
+        <a href="#skill_content"onclick="InitChange(2)"><div class="pages"><h1>Skills</h1></div></a>
+        <a href="#todo_content"onclick="InitChange(3)"><div class="pages"><h1>To-Do List</h1></div></a>
+        <a href="#contact_me"onclick="InitChange(0)"><div class="pages"><h1>Contact me</h1></div></a>
+      </div>
+    </div>
     <!--Header and nav-->
     <header>
       <div class="navContainer">
-        <div id="big_bg_back" class="hide_page"></div>
+        <div id="big_bg_back" class="hide_page_two"></div>
         <div id="big_bg"></div>
         <div id="box">
           <div id="chart-container"></div>
@@ -583,7 +596,7 @@
     <!--Main Content-->
     <div id="main" class="container">
       <!--About Me-->
-      <div id="about_me_content" class="hide_page">
+      <div id="about_me_content" class="hide_page hide_page_two">
         <div class="row">
           <div class="col-md-6">
             <div class="row">
@@ -685,21 +698,23 @@
                 <p></p>
               </div>
             </div>
-            <hr />
+
           </div>
-        </div>
+        </div><hr class="hide_page">
       </div>
+      
       <!--Portfolio-->
-      <div id="portfolio_content" class="hide_page">
+      <div id="portfolio_content" class="hide_page hide_page_two">
         <div class="row">
           <div class="col-12"><h2>Portfolio</h2></div>
         </div>
         <div id="prot_row" class="row row-eq-height">
           <!--Add by init.js-->
-        </div>
+        </div><hr class="hide_page">
       </div>
+      
       <!--Skill-->
-      <div id="skill_content" class="hide_page">
+      <div id="skill_content" class="hide_page hide_page_two">
         <div id="skill_row" class="row">
           <div class="col-12"><h2>Skills</h2></div>
           <!--Add by init.js-->
@@ -718,10 +733,11 @@
         <div id="hobbies_row" class="row">
           <div class="col-12"><h2>Hobbies</h2></div>
           <!--Add by init.js-->
-        </div>
+        </div><hr class="hide_page">
       </div>
+      
       <!--Todo-->
-      <div id="todo_content" class="hide_page">
+      <div id="todo_content" class="hide_page hide_page_two">
         <div class="row">
           <div class="col-md-12">
             <div id="events-upcoming"></div>
@@ -732,7 +748,7 @@
     </div>
     <!--Contact Me-->
     <footer>
-      <div id="contact_me" class="hide_page">
+      <div id="contact_me" class="hide_page_two">
         <div class="container">
           <div class="row">
               <div class="col-md-12">

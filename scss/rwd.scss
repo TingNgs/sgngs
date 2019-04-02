@@ -1,0 +1,128 @@
+@media screen and (max-width: 767px) {
+  .hide_page {
+    display: block;
+  }
+  #svg_container {
+    animation-name: none;
+    opacity: 0;
+  }
+  .service circle.shadow {
+    pointer-events: none;
+  }
+  hr.hide_page {
+    margin: 50px 0;
+  }
+}
+#mobile_nav_button {
+  width: 50px;
+  height: 50px;
+  content: '';
+  position: fixed;
+  left: -20px;
+  top: 230px;
+  border-radius: 500px;
+  fill: antiquewhite;
+  background-color: rgb(175, 222, 253);
+  z-index: 99;
+  &::after {
+    z-index: 2;
+    width: 15px;
+    height: 15px;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 17px;
+    border: 2px solid rgb(110, 110, 110);
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+    animation: arrows 1.5s infinite;
+    pointer-events: none;
+  }
+  &.open::after {
+    z-index: 2;
+    width: 15px;
+    height: 15px;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 17px;
+    border: 2px solid rgb(110, 110, 110);
+    transform: rotate(45deg);
+    border-top: none;
+    border-right: none;
+    animation: none;
+    pointer-events: none;
+  }
+}
+#mobile_nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+  pointer-events: none;
+
+  &.open {
+    pointer-events: all;
+  }
+}
+@keyframes arrows {
+  to {
+    transform: translateX(200%) rotate(45deg);
+    opacity: 0;
+  }
+}
+#nav-overlay {
+  position: absolute;
+  top: calc(-150% + 247px);
+  left: calc(-150% - 8px);
+
+  z-index: 0;
+
+  background: rgba(0, 0, 0, 0.8);
+
+  border-radius: 50%;
+
+  transition: 1s;
+  transform: scale3d(0, 0, 0);
+}
+#nav-overlay.open {
+  transform: scale3d(1, 1, 1);
+  transition: 1s;
+  width: 300%;
+  height: 300%;
+}
+#nav-overlay {
+  background-color: rgb(155, 209, 245);
+}
+#nav-fullscreen {
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+
+  .pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    z-index: 5;
+  }
+  &.open {
+    visibility: visible;
+    opacity: 1;
+    transition: ease-in 0.5s;
+    transition-delay: 0.25s;
+  }
+  .pages h1 {
+    z-index: 5;
+    color: #fff;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.non_click {
+  pointer-events: none;
+}
