@@ -1,2 +1,2 @@
-footer{margin-top:30px;background-color:#51a0bb}footer #contact_me{padding:25px 0}footer h2,footer p{color:#fff}
+footer{margin-top:30px;margin-bottom:0px !important;background-color:#51a0bb}footer #contact_me{padding:25px 0}footer #contact_me a{text-decoration:none}footer h2,footer p{color:#fff}#contact_me svg{height:15px;float:left;margin-top:6px;margin-right:10px}#contact_me svg path{fill:#fff}
 /*# sourceMappingURL=footer.css.map */

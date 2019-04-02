@@ -1,12 +1,24 @@
 footer {
   margin-top: 30px;
-
+  margin-bottom: 0px !important;
   background-color: #51a0bb;
   #contact_me {
     padding: 25px 0;
+    a {
+      text-decoration: none;
+    }
   }
   h2,
   p {
     color: #fff;
+  }
+}
+#contact_me svg {
+  height: 15px;
+  float: left;
+  margin-top: 6px;
+  margin-right: 10px;
+  path {
+    fill: #fff;
   }
 }
