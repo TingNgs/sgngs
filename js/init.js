@@ -200,6 +200,21 @@ function InitPortfolioData() {
     img: './img/portfolio/ntut_hksd.png'
   });
   portfolioData.push({
+    name: 'Colorpella',
+    description:
+      'Freelance android app. An android app detect color and sound frequency to send signal to arduino.',
+    tech_row: ['Android'],
+    link: [
+      { type: 'Github', href: 'https://github.com/ngSgn/ColorPlayer' },
+      {
+        type: 'About',
+        href:
+          'https://github.com/ngSgn/ColorPlayer/blob/master/%E8%AA%AA%E6%98%8E.pdf'
+      }
+    ],
+    img: './img/portfolio/colorpella.jpeg'
+  });
+  portfolioData.push({
     name: 'NTUT Empty Classroom',
     description:
       'Android final project. An android app use for search empty classroom in NTUT.',
