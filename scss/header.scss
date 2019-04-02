@@ -14,13 +14,36 @@ $pointer_color: #3b8fc0;
   width: 100%;
   max-height: 500px;
   margin: 0 auto;
-  background-image: url('../img/bg.jpg');
-  background-size: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
+
   position: relative;
+
+  .big_bg {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+    background-image: url('../img/bg.jpg');
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .big_bg_back {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-color: #927a97;
+  }
 }
-.navContainer div {
+.navContainer #box,
+#svg_container {
   animation-name: oxxo;
   animation-duration: 4s;
   opacity: 1;
@@ -43,7 +66,7 @@ $pointer_color: #3b8fc0;
 }
 .navContainer #svg_container svg {
   position: static;
-  z-index: 9;
+  z-index: 99;
   top: 0;
   right: 0;
 }
@@ -104,17 +127,19 @@ $pointer_color: #3b8fc0;
   transition: all 250ms ease-in;
 }
 .service circle {
-  fill: $main_color;
+  fill: #35789233;
 }
 .service circle.shadow {
   fill-opacity: 0;
   filter: url(#service-shadow);
 }
-.service use {
-  fill: #fff;
+
+.service use,
+#Page-1 {
+  fill: rgb(202, 182, 159) !important;
 }
 .service text {
-  fill: #fff;
+  fill: rgb(202, 218, 216);
 }
 .service.active .icon-wrapper,
 .service:hover .icon-wrapper {
