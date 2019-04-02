@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/skill.css">
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/skill.css" />
     <link rel="stylesheet" href="./css/aboutme.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/name.css" />
@@ -19,10 +19,11 @@
     <title>Ting NGs - Personal Resume Website</title>
   </head>
   <body>
+    <!--Header and nav-->
     <header>
       <div class="navContainer">
-        <div class="big_bg_back"></div>
-        <div class="big_bg"></div>
+        <div id="big_bg_back" class="hide_page"></div>
+        <div id="big_bg"></div>
         <div id="box">
           <div id="chart-container"></div>
         </div>
@@ -420,8 +421,8 @@
         </div>
       </div>
     </header>
+    <!--Name banner-->
     <div class="name">
-      <!--<div id="whole_div"></div>-->
       <div id="name" class="container-fluid">
         <div class="row">
           <div class="col-lg-4 col-md-3 col-3 line">
@@ -579,7 +580,9 @@
         </div>
       </div>
     </div>
+    <!--Main Content-->
     <div id="main" class="container">
+      <!--About Me-->
       <div id="aboutme" class="hide_page">
         <div class="row">
           <div class="col-md-6">
@@ -686,279 +689,55 @@
           </div>
         </div>
       </div>
+      <!--Portfolio-->
       <div id="portfolio_content" class="hide_page">
         <div class="row">
           <div class="col-12"><h2>Portfolio</h2></div>
         </div>
-        <div class="row row-eq-height">
-          <div class="col-xl-4 col-md-6 col-12 portfolio_Card">
-            <div class="card_box">
-              <div class="row card_h">
-                <div class="card-flip">
-                  <div class="flip">
-                    <div
-                      class="back"
-                      style="background-image: url(./img/portfolio/sgngs.png);"
-                    >
-                      <div class="back_box">
-                        <div>
-                          <a
-                            href="https://github.com/ngSgn/sgngs"
-                            target="_blank"
-                            ><p>Github</p></a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="card_bg"
-                      style="background-image: url(./img/portfolio/sgngs.png);"
-                    ></div>
-                    <div class="front">
-                      <div class="portfolio_box_des">
-                        <h5>sgngs.com</h5>
-                        <hr />
-                        <p>
-                          My personal resume websit. (This Website)
-                        </p>
-                      </div>
-
-                      <div class="tech_row">
-                        <hr />
-                        <div class="tech_box">SCSS</div>
-                        <div class="tech_box">Google API</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-6 col-12 portfolio_Card">
-            <div class="card_box">
-              <div class="row card_h">
-                <div class="card-flip">
-                  <div class="flip">
-                    <div
-                      class="back"
-                      style="background-image: url(./img/portfolio/tt-iwatch.png);"
-                    >
-                      <div class="back_box">
-                        <div>
-                          <a
-                            href="https://github.com/thianhe/TT-iwatchStore"
-                            target="_blank"
-                            ><p>Github</p></a
-                          >
-                          <a href="https://youtu.be/3xBdWTHWdL0" target="_blank"
-                            ><p>Demo Video</p></a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="card_bg"
-                      style="background-image: url(./img/portfolio/tt-iwatch.png);"
-                    ></div>
-                    <div class="front">
-                      <div class="portfolio_box_des">
-                        <h5>TT-iwatchStore</h5>
-                        <hr />
-                        <p>
-                          Database and Information Security final project. Build
-                          a e-commerce system that sell smart watch.
-                        </p>
-                      </div>
-
-                      <div class="tech_row">
-                        <hr />
-                        <div class="tech_box">PHP</div>
-                        <div class="tech_box">MySQL</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6 col-12 portfolio_Card">
-            <div class="card_box">
-              <div class="row card_h">
-                <div class="card-flip">
-                  <div class="flip">
-                    <div
-                      class="back"
-                      style="background-image: url(./img/portfolio/isaac.png);"
-                    >
-                      <div class="back_box">
-                        <div>
-                          <a
-                            href="https://github.com/thianhe/OopLab"
-                            target="_blank"
-                            ><p>Github</p></a
-                          >
-                          <a
-                            href="https://thianhe.github.io/OopLab/"
-                            target="_blank"
-                            ><p>Play Game</p></a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="card_bg"
-                      style="background-image: url(./img/portfolio/isaac.png);"
-                    ></div>
-                    <div class="front">
-                      <div class="portfolio_box_des">
-                        <h5>Imitation Game - The Binding of Isaac</h5>
-                        <hr />
-                        <p>
-                          Oop Lab final project. Imitate a game (The Binding of
-                          Isaac) by using professor's JS framework.
-                        </p>
-                      </div>
-
-                      <div class="tech_row">
-                        <hr />
-                        <div class="tech_box">JavaScript</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-6 portfolio_Card">
-            <div class="card_box">
-              <div class="row card_h">
-                <div class="card-flip">
-                  <div class="flip">
-                    <div
-                      class="back"
-                      style="background-image: url(./img/portfolio/ntut_hksd.png);"
-                    >
-                      <div class="back_box">
-                        <div>
-                          <a
-                            href="https://github.com/ngSgn/FinalWebProject"
-                            target="_blank"
-                            ><p>Github</p></a
-                          >
-                          <a
-                            href="https://ngsgn.github.io/FinalWebProject/"
-                            target="_blank"
-                            ><p>Demo</p></a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="card_bg"
-                      style="background-image: url(./img/portfolio/ntut_hksd.png);"
-                    ></div>
-                    <div class="front">
-                      <div class="portfolio_box_des">
-                        <h5>NTUT HKST</h5>
-                        <hr />
-                        <p>
-                          Web programming final project. A register system for
-                          NTUT's oversea chinese student.
-                        </p>
-                      </div>
-
-                      <div class="tech_row">
-                        <hr />
-                        <div class="tech_box">Firebase</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-6 col-12 portfolio_Card">
-            <div class="card_box">
-              <div class="row card_h">
-                <div class="card-flip">
-                  <div class="flip">
-                    <div
-                      class="back"
-                      style="background-image: url(./img/portfolio/NTUT_emptyClassroom.png);"
-                    >
-                      <div class="back_box">
-                        <div>
-                          <a
-                            href="https://github.com/ngSgn/ntutAndroidFinal"
-                            target="_blank"
-                            ><p>Github</p></a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="card_bg"
-                      style="background-image: url(./img/portfolio/NTUT_emptyClassroom.png);"
-                    ></div>
-                    <div class="front">
-                      <div class="portfolio_box_des">
-                        <h5>NTUT Empty Classroom</h5>
-                        <hr />
-                        <p>
-                          Android final project. An android app use for search
-                          empty classroom in NTUT.
-                        </p>
-                      </div>
-
-                      <div class="tech_row">
-                        <hr />
-                        <div class="tech_box">Android</div>
-                        <div class="tech_box">Firebase</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div id="prot_row" class="row row-eq-height">
+          <!--Add by init.js-->
         </div>
       </div>
+      <!--Skill-->
       <div id="skill_content" class="hide_page">
         <div id="skill_row" class="row">
           <div class="col-12"><h2>Skills</h2></div>
+          <!--Add by init.js-->
         </div>
-        <hr>
+        <hr />
         <div id="editing_row" class="row">
-            <div class="col-12"><h2>Editing Tools</h2></div>
+          <div class="col-12"><h2>Editing Tools</h2></div>
+          <!--Add by init.js-->
         </div>
-        <hr>
+        <hr />
         <div id="languages_row" class="row">
-            <div class="col-12"><h2>Languages</h2></div>
+          <div class="col-12"><h2>Languages</h2></div>
+          <!--Add by init.js-->
         </div>
-        <hr>
+        <hr />
         <div id="hobbies_row" class="row">
-            <div class="col-12"><h2>Hobbies</h2></div>
+          <div class="col-12"><h2>Hobbies</h2></div>
+          <!--Add by init.js-->
         </div>
       </div>
+      <!--Todo-->
       <div id="todo_content" class="hide_page">
         <div class="row">
           <div class="col-md-12">
-            <div id="events-upcoming">
-            </div>
+            <div id="events-upcoming"></div>
           </div>
-            <div class="col-md-12">
-            </div>
+          <div class="col-md-12"></div>
         </div>
       </div>
     </div>
-    
+    <!--Contact Me-->
     <footer>
-      <div class="container">
+      <div id="contact_me" class="container hide_page">
         <div class="row">
           <div class="col-12">
             <h2>Contact me</h2>
-        </div></div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
@@ -967,7 +746,6 @@
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
 
   <script src="./js/init.js"></script>
   <script src="./js/CircularAudioWave.js"></script>

@@ -240,8 +240,11 @@ setTimeout(() => {
     InitChange(0);
   }
   document.getElementById('name').classList.add('afterAnim');
+  document.getElementById('contact_me').classList.remove('hide_page');
 }, 1500);
-
+setTimeout(() => {
+  document.getElementById('big_bg_back').classList.remove('hide_page');
+}, 200);
 window.addEventListener(
   'resize',
   function() {
