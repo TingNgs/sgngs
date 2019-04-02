@@ -31,10 +31,10 @@ h5 {
 .hide_page {
   display: none;
 }
-#about_me,
-#portfolio,
-#skill,
-#todo {
+#about_me_content,
+#portfolio_content,
+#skill_content,
+#todo_content {
   -webkit-animation-name: main_in;
   animation-name: main_in;
   -webkit-animation-duration: 1s;

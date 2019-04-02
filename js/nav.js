@@ -324,27 +324,27 @@ function MusicControl() {
 
 function ChangePageFunction(pageNumber) {
   let page;
-  document.getElementById('about_me').classList.add('hide_page');
-  document.getElementById('portfolio').classList.add('hide_page');
-  document.getElementById('skill').classList.add('hide_page');
-  document.getElementById('todo').classList.add('hide_page');
+  document.getElementById('about_me_content').classList.add('hide_page');
+  document.getElementById('portfolio_content').classList.add('hide_page');
+  document.getElementById('skill_content').classList.add('hide_page');
+  document.getElementById('todo_content').classList.add('hide_page');
   if (pageNumber == 0) {
     page = 'about_me';
-    document.getElementById('about_me').classList.remove('hide_page');
+    document.getElementById('about_me_content').classList.remove('hide_page');
   }
   if (pageNumber == 1) {
     page = 'portfolio';
-    document.getElementById('portfolio').classList.remove('hide_page');
+    document.getElementById('portfolio_content').classList.remove('hide_page');
   }
   if (pageNumber == 5 || pageNumber == 2) {
     page = 'skill';
-    document.getElementById('skill').classList.remove('hide_page');
+    document.getElementById('skill_content').classList.remove('hide_page');
   }
   if (pageNumber == 6 || pageNumber == 3) {
     page = 'todo';
-    document.getElementById('todo').classList.remove('hide_page');
+    document.getElementById('todo_content').classList.remove('hide_page');
   }
   setTimeout(() => {
-    location.href = '#' + page + '_page';
+    location.href = '#' + page;
   }, 200);
 }
