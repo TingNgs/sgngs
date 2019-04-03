@@ -253,7 +253,7 @@ setTimeout(() => {
 }, 3000);
 setTimeout(() => {
   document.getElementById('big_bg_back').classList.remove('hide_page_two');
-}, 200);
+}, 500);
 window.addEventListener(
   'resize',
   function() {
