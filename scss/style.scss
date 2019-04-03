@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import './aboutme';
+@import './footer';
+@import './header';
+@import './name';
+@import './portfolio';
+@import './skill';
+@import './to_do';
+
 $main_color: #005fa4;
 * {
   margin: 0;
@@ -61,4 +70,132 @@ hr {
 }
 html {
   scroll-behavior: smooth;
+}
+@media screen and (max-width: 767px) {
+  .hide_page {
+    display: block;
+  }
+  #svg_container {
+    animation-name: none;
+    opacity: 0;
+  }
+  .service circle.shadow,
+  .service {
+    pointer-events: none;
+  }
+  hr.hide_page {
+    margin: 50px 0;
+  }
+}
+#mobile_nav_button {
+  width: 50px;
+  height: 50px;
+  content: '';
+  position: fixed;
+  left: -20px;
+  top: 30%;
+  border-radius: 500px;
+  fill: antiquewhite;
+  background-color: rgba(69, 138, 184, 0.5);
+  z-index: 99;
+
+  &.open {
+    background-color: rgba(101, 170, 216, 1);
+  }
+}
+#mobile_nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+  pointer-events: none;
+
+  &.open {
+    pointer-events: all;
+  }
+}
+
+#nav-overlay {
+  position: absolute;
+  top: calc(-150% + 247px);
+  left: calc(-150% - 8px);
+
+  z-index: 0;
+
+  background: rgba(0, 0, 0, 0.8);
+
+  border-radius: 50%;
+  transform: scale3d(0, 0, 0);
+}
+#nav-overlay.open {
+  transform: scale3d(1, 1, 1);
+  transition: 1s;
+  width: 300%;
+  height: 300%;
+}
+#nav-overlay {
+  background-color: rgb(155, 209, 245);
+}
+#nav-fullscreen {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100vw;
+  visibility: hidden;
+
+  .pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    z-index: 5;
+  }
+  &.open {
+    visibility: visible;
+    opacity: 1;
+    transition: ease-in 0.5s;
+    transition-delay: 0.25s;
+  }
+  .pages h1 {
+    z-index: 5;
+    color: #fff;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.non_click {
+  pointer-events: none;
+}
+#mobile_nav_button.open .button_container {
+  .top {
+    transform: translateY(10px) translateX(0) rotate(45deg);
+  }
+  .middle {
+    opacity: 0;
+  }
+
+  .bottom {
+    transform: translateY(-10px) translateX(0) rotate(-45deg);
+  }
+}
+#toggle span {
+  background: rgb(220, 245, 237);
+  border: none;
+  height: 5px;
+  width: 91%;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  transition: all 0.35s ease;
+  cursor: pointer;
+
+  &:nth-of-type(2) {
+    top: 23px;
+  }
+
+  &:nth-of-type(3) {
+    top: 33px;
+  }
 }
