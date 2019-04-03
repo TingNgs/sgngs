@@ -1,5 +1,8 @@
 $main_color: #005fa4;
 $pointer_color: #3b8fc0;
+$circle_color: #30637762;
+$big_bg_back_color: #927a97;
+$icon_color: rgb(243, 255, 254);
 #box {
   position: absolute;
   width: 100%;
@@ -39,11 +42,11 @@ $pointer_color: #3b8fc0;
     top: 0;
     left: 0;
     z-index: 0;
-    background-color: #927a97;
+    background-color: $big_bg_back_color;
   }
 }
 #nav_path {
-  fill: #5183a0;
+  fill: $circle_color;
 }
 .navContainer #box,
 #svg_container {
@@ -109,7 +112,7 @@ $pointer_color: #3b8fc0;
   transition: all 250ms ease-in;
 }
 .service circle {
-  fill: #30637762;
+  fill: $circle_color;
 }
 .service circle.shadow {
   fill-opacity: 0;
@@ -118,10 +121,10 @@ $pointer_color: #3b8fc0;
 
 .service use,
 #Page-1 {
-  fill: rgb(243, 255, 254);
+  fill: $icon_color;
 }
 .service text {
-  fill: rgb(202, 218, 216);
+  fill: $icon_color;
 }
 .service.active .icon-wrapper,
 .service:hover .icon-wrapper {
