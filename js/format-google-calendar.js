@@ -309,7 +309,7 @@
                 (format[i + 1] === '*date*' && dateFormatted !== '') ||
                 (format[i + 1] === '*description*' && description !== '')
               ) {
-                output = output.concat(format[i]);
+                output = output.concat('<span>' + format[i] + '</span>');
               }
             }
           }
