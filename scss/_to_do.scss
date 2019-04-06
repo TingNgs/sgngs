@@ -1,4 +1,4 @@
-li {
+#events-upcoming li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
@@ -11,21 +11,22 @@ li {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: #004577;
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
-li:nth-child(odd) {
+#events-upcoming li:nth-child(odd) {
   background: #f9f9f9;
 }
-li:hover {
+#events-upcoming li:hover {
   background: #ddd;
 }
-li.checked {
+#events-upcoming li.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
 }
-li.checked::before {
+#events-upcoming li.checked::before {
   content: '';
   position: absolute;
   border-color: #fff;
