@@ -50,9 +50,19 @@ h5 {
 #portfolio_content,
 #skill_content,
 #todo_content {
+  -webkit-animation-name: main_in;
   animation-name: main_in;
+  -webkit-animation-duration: 1s;
   animation-duration: 1s;
   opacity: 1;
+}
+@-webkit-keyframes main_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes main_in {
   0% {
@@ -76,6 +86,7 @@ html {
     display: block;
   }
   #svg_container {
+    -webkit-animation-name: none;
     animation-name: none;
     opacity: 0;
   }
@@ -127,10 +138,13 @@ html {
   background: rgba(0, 0, 0, 0.8);
 
   border-radius: 50%;
+  -webkit-transform: scale3d(0, 0, 0);
   transform: scale3d(0, 0, 0);
 }
 #nav-overlay.open {
+  -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
+  -webkit-transition: 1s;
   transition: 1s;
   width: 300%;
   height: 300%;
@@ -145,8 +159,14 @@ html {
   visibility: hidden;
 
   .pages {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 20%;
     z-index: 5;
@@ -154,7 +174,9 @@ html {
   &.open {
     visibility: visible;
     opacity: 1;
+    -webkit-transition: ease-in 0.5s;
     transition: ease-in 0.5s;
+    -webkit-transition-delay: 0.25s;
     transition-delay: 0.25s;
   }
   .pages h1 {
@@ -170,6 +192,7 @@ html {
 }
 #mobile_nav_button.open .button_container {
   .top {
+    -webkit-transform: translateY(10px) translateX(0) rotate(45deg);
     transform: translateY(10px) translateX(0) rotate(45deg);
   }
   .middle {
@@ -177,6 +200,7 @@ html {
   }
 
   .bottom {
+    -webkit-transform: translateY(-10px) translateX(0) rotate(-45deg);
     transform: translateY(-10px) translateX(0) rotate(-45deg);
   }
 }
@@ -188,6 +212,7 @@ html {
   position: absolute;
   top: 13px;
   left: 0;
+  -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
   cursor: pointer;
 
