@@ -1,8 +1,8 @@
 $('.card-flip').click(function() {
-  if (detectmob()) $(this).toggleClass('hover');
+  if (isMobileBool) $(this).toggleClass('hover');
 });
 $('.skill_box').click(function() {
-  if (detectmob()) $(this).toggleClass('hover');
+  if (isMobileBool) $(this).toggleClass('hover');
 });
 function detectmob() {
   if (
@@ -19,3 +19,4 @@ function detectmob() {
     return false;
   }
 }
+var isMobileBool = detectmob();
