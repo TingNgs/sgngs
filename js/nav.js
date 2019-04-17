@@ -9,6 +9,18 @@ const text_top_margin = 18;
 const tspan_delta = 16;
 let last_index = 0;
 
+//Array describes points for a whole circle in order to get
+//the right curve
+let half_circle = [
+  { x: -serv_dist, y: 0 },
+  { x: 0, y: serv_dist },
+  { x: serv_dist, y: 0 },
+  { x: 0, y: -serv_dist },
+  { x: -serv_dist, y: 0 }
+];
+
+//A simple object is used in the tween to retrieve its values
+var pivot_path = { x: half_circle[0].x, y: half_circle[0].y };
 //name is used as the title for the bubble
 //icon is the id of the corresponding svg symbol
 const services_data = [
@@ -190,70 +202,6 @@ function serviceClick(ev) {
   }, 250);
 }
 
-//Array describes points for a whole circle in order to get
-//the right curve
-let half_circle = [
-  { x: -serv_dist, y: 0 },
-  { x: 0, y: serv_dist },
-  { x: serv_dist, y: 0 },
-  { x: 0, y: -serv_dist },
-  { x: -serv_dist, y: 0 }
-];
-
-//A simple object is used in the tween to retrieve its values
-var pivot_path = { x: half_circle[0].x, y: half_circle[0].y };
-
-//The object is animated with a duration based on how many bubbles
-//should be placed
-var twn_pivot_path = TweenMax.to(pivot_path, 12, {
-  bezier: {
-    values: half_circle,
-    curviness: 1.5
-  },
-  ease: Linear.easeNone
-});
-
-services_data.reduce((count, serv) => {
-  addService(serv, count);
-  return ++count;
-}, 0);
-
-//The variable is modified inside the function
-//but its also used later to toggle its class
-
-var twn_pointer_path = new TimelineMax({ paused: true });
-
-createPointer();
-
-//Adding it immediately triggers a bug for the transform
-setTimeout(() => jQuery('#service-collection .serv-0').addClass('active'), 200);
-setTimeout(() => {
-  let path = window.location.hash.substr(1);
-  console.log(path);
-  if (path.search('portfolio') != -1) {
-    InitChange(1);
-  } else if (path.search('skill') != -1) {
-    InitChange(5);
-  } else if (path.search('todo') != -1) {
-    InitChange(6);
-  } else {
-    InitChange(0);
-  }
-  document.getElementById('name').classList.add('afterAnim');
-  $('#mobile_nav_button').removeClass('non_click');
-}, 1500);
-setTimeout(() => {
-  document.getElementById('contact_me').classList.remove('hide_page_two');
-  document.getElementById('about_me_content').classList.remove('hide_page_two');
-  document
-    .getElementById('portfolio_content')
-    .classList.remove('hide_page_two');
-  document.getElementById('skill_content').classList.remove('hide_page_two');
-  document.getElementById('todo_content').classList.remove('hide_page_two');
-}, 3000);
-setTimeout(() => {
-  document.getElementById('big_bg_back').classList.remove('hide_page_two');
-}, 500);
 window.addEventListener(
   'resize',
   function() {
@@ -309,24 +257,7 @@ function InitChange(class_index) {
   littleCircleRotate.setAttribute('to', angle + ' 153 175');
   littleCircleRotate.beginElement();
 }
-setTimeout(() => {
-  const tempHeight = 500;
-  document
-    .getElementById('chart-container')
-    .setAttribute(
-      'style',
-      'width:' + tempHeight + 'px; height: ' + tempHeight + 'px;'
-    );
-  this.wave = new CircularAudioWave(document.getElementById('chart-container'));
 
-  this.wave.loadAudio('./music/Home.mp3');
-}, 500);
-setTimeout(() => {
-  const tempHeight = document.getElementById('box').clientHeight;
-  document
-    .getElementById('chart-container')
-    .setAttribute('style', 'width:' + tempHeight + 'px');
-}, 600);
 function MusicControl() {
   if (this.wave.playing) {
     this.wave.onended();
@@ -334,6 +265,9 @@ function MusicControl() {
   }
   this.wave.play();
 }
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 function ChangePageFunction(pageNumber) {
   let page;
@@ -368,11 +302,86 @@ function mobileNavOnclick() {
   $('#mobile_nav_button').toggleClass('open');
   $('#mobile_nav').toggleClass('open');
 }
-let vh = window.innerHeight * 0.01;
-// Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 window.addEventListener('resize', () => {
   // We execute the same script as before
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+var twn_pivot_path = TweenMax.to(pivot_path, 12, {
+  bezier: {
+    values: half_circle,
+    curviness: 1.5
+  },
+  ease: Linear.easeNone
+});
+var twn_pointer_path = new TimelineMax({ paused: true });
+function NavInit() {
+  //The object is animated with a duration based on how many bubbles
+  //should be placed
+
+  services_data.reduce((count, serv) => {
+    addService(serv, count);
+    return ++count;
+  }, 0);
+
+  //The variable is modified inside the function
+  //but its also used later to toggle its class
+
+  createPointer();
+
+  //Adding it immediately triggers a bug for the transform
+  setTimeout(
+    () => jQuery('#service-collection .serv-0').addClass('active'),
+    200
+  );
+  setTimeout(() => {
+    let path = window.location.hash.substr(1);
+    console.log(path);
+    if (path.search('portfolio') != -1) {
+      InitChange(1);
+    } else if (path.search('skill') != -1) {
+      InitChange(5);
+    } else if (path.search('todo') != -1) {
+      InitChange(6);
+    } else {
+      InitChange(0);
+    }
+    document.getElementById('name').classList.add('afterAnim');
+    $('#mobile_nav_button').removeClass('non_click');
+  }, 1500);
+  setTimeout(() => {
+    document.getElementById('contact_me').classList.remove('hide_page_two');
+    document
+      .getElementById('about_me_content')
+      .classList.remove('hide_page_two');
+    document
+      .getElementById('portfolio_content')
+      .classList.remove('hide_page_two');
+    document.getElementById('skill_content').classList.remove('hide_page_two');
+    document.getElementById('todo_content').classList.remove('hide_page_two');
+  }, 3000);
+  setTimeout(() => {
+    document.getElementById('big_bg_back').classList.remove('hide_page_two');
+  }, 500);
+  setTimeout(() => {
+    const tempHeight = 500;
+    document
+      .getElementById('chart-container')
+      .setAttribute(
+        'style',
+        'width:' + tempHeight + 'px; height: ' + tempHeight + 'px;'
+      );
+    this.wave = new CircularAudioWave(
+      document.getElementById('chart-container')
+    );
+
+    this.wave.loadAudio('./music/Home.mp3');
+  }, 500);
+  setTimeout(() => {
+    const tempHeight = document.getElementById('box').clientHeight;
+    document
+      .getElementById('chart-container')
+      .setAttribute('style', 'width:' + tempHeight + 'px');
+  }, 600);
+}
