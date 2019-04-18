@@ -296,7 +296,6 @@ function ChangePageFunction(pageNumber) {
   }, 200);
 }
 function mobileNavOnclick() {
-  console.log('yo');
   $('#nav-fullscreen').toggleClass('open');
   $('#nav-overlay').toggleClass('open');
   $('#mobile_nav_button').toggleClass('open');
@@ -337,7 +336,7 @@ function NavInit() {
   );
   setTimeout(() => {
     let path = window.location.hash.substr(1);
-    console.log(path);
+    //console.log(path);
     if (path.search('portfolio') != -1) {
       InitChange(1);
     } else if (path.search('skill') != -1) {
