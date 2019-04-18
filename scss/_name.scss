@@ -19,7 +19,7 @@
 }
 #name path,
 #name rect {
-  stroke: #005fa4;
+  stroke: $main_color;
   fill: #fff;
   stroke-dasharray: 1800;
   opacity: 0;
@@ -29,8 +29,8 @@
 #name.afterAnim path,
 #name.afterAnim rect {
   opacity: 1;
-  stroke: #005fa4;
-  fill: #005fa4;
+  stroke: $main_color;
+  fill: $main_color;
 }
 #name rect {
   stroke-width: 0px;
@@ -46,10 +46,10 @@
     opacity: 0;
   }
   50% {
-    fill: rgba(0, 95, 164, 0);
+    fill: $name_animate_fill;
   }
   100% {
-    fill: rgba(0, 95, 164, 1);
+    fill: $name_animate_fillAfter;
     stroke-dashoffset: 0;
     opacity: 1;
   }
@@ -62,10 +62,10 @@
     opacity: 0;
   }
   50% {
-    fill: rgba(0, 95, 164, 0);
+    fill: $name_animate_fill;
   }
   100% {
-    fill: rgba(0, 95, 164, 1);
+    fill: $name_animate_fillAfter;
     stroke-dashoffset: 0;
     opacity: 1;
   }

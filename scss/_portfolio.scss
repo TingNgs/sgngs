@@ -40,8 +40,8 @@
   position: relative;
   height: 100%;
   border: 1px solid #666666;
-  -webkit-box-shadow: 0 0 10px rgba(0, 151, 197, 0.774);
-  box-shadow: 0 0 10px rgba(0, 151, 197, 0.774);
+  -webkit-box-shadow: 0 0 10px $card_shadow_color;
+  box-shadow: 0 0 10px $card_shadow_color;
 }
 .flip .front {
   padding-top: 30px;
@@ -61,7 +61,7 @@
   padding: 1px 6px;
   border-radius: 5px;
   color: #fff;
-  background-color: rgba(0, 151, 197, 1);
+  background-color: $tech_box_color;
   display: inline-block;
 }
 .portfolio_Card .front {
@@ -124,11 +124,11 @@
   padding: 5px 10px;
   border-radius: 5px;
   color: #fff;
-  background-color: rgb(25, 181, 233);
+  background-color: $tech_box_color;
   text-align: center;
 }
 .back_box a p:hover {
-  background-color: rgb(0, 126, 165);
+  background-color: $backbox_hover_color;
 }
 .back_box a {
   text-decoration: none !important;

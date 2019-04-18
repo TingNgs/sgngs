@@ -2,7 +2,7 @@
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
-  background: #eee;
+  background: $todo_li_bg;
   font-size: 18px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -16,13 +16,13 @@
 
 /* Set all odd list items to a different color (zebra-stripes) */
 #events-upcoming li:nth-child(odd) {
-  background: #f9f9f9;
+  background: $todo_li_Oddbg;
 }
 #events-upcoming li:hover {
-  background: #ddd;
+  background: $todo_li_hover_bg;
 }
 #events-upcoming li.checked {
-  background: #888;
+  background: $todo_li_checked_bg;
   color: #fff;
   text-decoration: line-through;
 }
@@ -41,5 +41,5 @@
 }
 
 li span {
-  color: #004577;
+  color: $text_color;
 }
