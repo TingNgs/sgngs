@@ -349,7 +349,7 @@ function NavInit() {
     }
     document.getElementById('name').classList.add('afterAnim');
     $('#mobile_nav_button').removeClass('non_click');
-  }, 1500);
+  }, 0);
   setTimeout(() => {
     document.getElementById('contact_me').classList.remove('hide_page_two');
     document
@@ -360,10 +360,10 @@ function NavInit() {
       .classList.remove('hide_page_two');
     document.getElementById('skill_content').classList.remove('hide_page_two');
     document.getElementById('todo_content').classList.remove('hide_page_two');
-  }, 3000);
+  }, 0);
   setTimeout(() => {
     document.getElementById('big_bg_back').classList.remove('hide_page_two');
-  }, 500);
+  }, 0);
   setTimeout(() => {
     const tempHeight = 500;
     document
@@ -377,11 +377,11 @@ function NavInit() {
     );
 
     this.wave.loadAudio('./music/Home.mp3');
-  }, 500);
+  }, 0);
   setTimeout(() => {
     const tempHeight = document.getElementById('box').clientHeight;
     document
       .getElementById('chart-container')
       .setAttribute('style', 'width:' + tempHeight + 'px');
-  }, 600);
+  }, 0);
 }

@@ -3,10 +3,12 @@ $(function() {
   $('#name_container').load('name.html');
   $('footer').load('footer.html');
   $('header').load('header.html');
-  $.getScript('js/nav.js', function() {
-    NavInit();
-  });
   InitPortfolioData();
   InitSkillData();
-  $.getScript('js/isMobile.js');
+  setTimeout(function() {
+    $.getScript('js/nav.js', function() {
+      NavInit();
+    });
+    $.getScript('js/isMobile.js');
+  }, 1500);
 });
