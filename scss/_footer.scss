@@ -1,24 +1,21 @@
 footer {
-  margin-top: 30px;
-  margin-bottom: 0px !important;
-  background-color: $footer_bg;
-  #contact_me {
-    padding: 25px 0;
-    a {
-      text-decoration: none;
-    }
-  }
-  h2,
-  p {
-    color: #fff;
-  }
+	margin-top: 30px;
+	margin-bottom: 0px !important;
+	background-color: $footer_bg;
+	#contact_me {
+		padding: 25px 0;
+		a {
+			text-decoration: none;
+		}
+	}
+	h2,
+	p {
+		color: #fff;
+	}
 }
-#contact_me svg {
-  height: 15px;
-  float: left;
-  margin-top: 6px;
-  margin-right: 10px;
-  path {
-    fill: #fff;
-  }
+#contact_me img {
+	height: 15px;
+	float: left;
+	margin-top: 6px;
+	margin-right: 10px;
 }
