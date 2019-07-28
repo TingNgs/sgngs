@@ -16,7 +16,7 @@
 
 /* Set all odd list items to a different color (zebra-stripes) */
 #events-upcoming li:nth-child(odd) {
-  background: $todo_li_Oddbg;
+  background: $todo_li_Odd_bg;
 }
 #events-upcoming li:hover {
   background: $todo_li_hover_bg;
