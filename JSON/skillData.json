@@ -81,12 +81,12 @@
     },
     {
       "name": "Longboarding",
-      "comment": "That Time I Almost Died",
+      "comment": "",
       "checked": ["checked", "checked", "checked", "", ""]
     },
     {
       "name": "Hiking",
-      "comment": "But not too high",
+      "comment": "",
       "checked": ["checked", "checked", "checked", "", ""]
     }
   ]
