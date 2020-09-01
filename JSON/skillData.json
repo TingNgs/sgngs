@@ -1,108 +1,76 @@
 {
   "skill": [
     {
-      "name": "HTML",
-      "comment": "",
-      "checked": ["checked", "checked", "checked", "checked", " "]
+      "name": "React js",
+      "comment": "2 Years"
     },
     {
-      "name": "CSS",
-      "comment": "",
-      "checked": ["checked", "checked", "checked", "checked", " "]
+      "name": "Redux",
+      "comment": "2 Years"
+    },
+    {
+      "name": "Next js",
+      "comment": "2 Years"
+    },
+    {
+      "name": "Tailwind css",
+      "comment": "2 Years"
+    },
+    {
+      "name": "Webpack",
+      "comment": "2 Years"
+    },
+    {
+      "name": "HTML",
+      "comment": "3 Years"
+    },
+    {
+      "name": "CSS/SCSS",
+      "comment": "3 Years"
     },
     {
       "name": "JavaScript",
-      "comment": "",
-      "checked": ["checked", "checked", "checked", "checked", " "]
+      "comment": "3 Years"
     },
     {
       "name": "Bootstrap",
-      "comment": "",
-      "checked": ["checked", "checked", "checked", "checked", " "]
-    },
-    {
-      "name": "PHP",
-      "comment": "",
-      "checked": ["checked", "checked", "checked", "checked", " "]
+      "comment": "2 Years"
     },
     {
       "name": "MySQL",
-      "comment": "",
-      "checked": ["checked", "checked", "checked", "checked", " "]
+      "comment": "2 Years"
     },
     {
-      "name": "Angular 7",
-      "comment": "",
-      "checked": ["checked", "checked", "checked", "", " "]
-    },
-    {
-      "name": "SASS/SCSS",
-      "comment": "",
-      "checked": ["checked", "checked", "checked", "", " "]
-    },
-    {
-      "name": "Firebase",
-      "comment": "",
-      "checked": ["checked", "checked", "checked", "", " "]
-    },
-    {
-      "name": "VHDL",
-      "comment": "I hate it",
-      "checked": ["checked", "checked", "checked", "", " "]
-    },
-    {
-      "name": "C/C++",
-      "comment": "",
-      "checked": ["checked", "checked", "checked", "", " "]
-    },
-    {
-      "name": "Java",
-      "comment": "",
-      "checked": ["checked", "checked", "", "", " "]
-    },
-    {
-      "name": "Python",
-      "comment": "",
-      "checked": ["checked", "", "", "", " "]
+      "name": "PHP",
+      "comment": "1 Years"
     }
   ],
   "editing": [
     {
       "name": "Adobe Photoshop",
-      "comment": "",
-      "checked": ["checked", "checked", "checked", "checked", " "]
+      "comment": ""
     },
     {
       "name": "Adobe Illustrator",
-      "comment": "",
-      "checked": ["checked", "checked", "checked", "", " "]
+      "comment": ""
     },
     {
       "name": "Adobe Premiere Pro",
-      "comment": "",
-      "checked": ["checked", "checked", "", "", " "]
+      "comment": ""
     }
   ],
   "languages": [
     {
       "name": "Cantonese (Native)",
-      "comment": "",
-      "checked": ["checked", "checked", "checked", "checked", "checked"]
-    },
-    {
-      "name": "Body language :D",
-      "comment": "Really good at it",
-      "checked": ["checked", "checked", "checked", "checked", "checked"]
+      "comment": ""
     },
     {
       "name": "Mandarin",
-      "comment": "",
-      "checked": ["checked", "checked", "checked", "checked", " "]
+      "comment": ""
     },
     {
       "name": "English",
-      "comment": "Survivable",
-      "checked": ["checked", "checked", "checked", "", " "]
+      "comment": ""
     }
   ],
   "hobbies": [

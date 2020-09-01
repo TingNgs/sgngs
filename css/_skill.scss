@@ -1,0 +1,33 @@
+.skillStar {
+  float: right;
+  span {
+    color: $empty_star;
+  }
+  span.checked {
+    color: $skill_hover_comment;
+  }
+}
+.skill_name {
+  float: left;
+}
+
+#skill_content h2 {
+  margin-bottom: 15px;
+}
+
+.skill_box {
+  margin-bottom: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  .comment {
+    padding: 0 15px;
+    p {
+      color: $skill_hover_comment;
+      text-align: right;
+      font-size: 12px;
+    }
+  }
+}
