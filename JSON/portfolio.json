@@ -1,78 +1,89 @@
 [
-	{
-		"name": "sgngs.com",
-		"description": "My personal resume websit. (This Website)",
-		"tech_row": ["SCSS", "Google API"],
-		"link": [
-			{ "type": "Github", "href": "https://github.com/TingNgs/sgngs" }
-		],
-		"img": "./img/portfolio/sgngs.png"
-	},
-	{
-		"name": "TT-iwatchStore",
-		"description": "Database and Information Security final project. Build a e-commerce system that sell smart watch.",
-		"tech_row": ["PHP", "MySQL"],
-		"link": [
-			{
-				"type": "Github",
-				"href": "https://github.com/thianhe/TT-iwatchStore"
-			},
-			{ "type": "Demo Video", "href": "https://youtu.be/3xBdWTHWdL0" }
-		],
-		"img": "./img/portfolio/tt-iwatch.png"
-	},
-	{
-		"name": "Imitation Game - The Binding of Isaac",
-		"description": "Oop Lab final project. Imitate a game (The Binding of Isaac) by using professor's JS framework.",
-		"tech_row": ["JavaScript"],
-		"link": [
-			{ "type": "Github", "href": "https://github.com/thianhe/OopLab" },
-			{ "type": "Play Demo", "href": "https://thianhe.github.io/OopLab/" }
-		],
-		"img": "./img/portfolio/isaac.png"
-	},
-	{
-		"name": "NTUT HKST",
-		"description": "Web programming final project. A register system for NTUT's oversea chinese student.",
-		"tech_row": ["Firebase"],
-		"link": [
-			{
-				"type": "Github",
-				"href": "https://github.com/TingNgs/FinalWebProject"
-			},
-			{
-				"type": "Demo",
-				"href": "https://TingNgs.github.io/FinalWebProject/"
-			}
-		],
-		"img": "./img/portfolio/ntut_hksd.png"
-	},
-	{
-		"name": "Colorpella",
-		"description": "Freelance android app. An android app detect color and sound frequency to send signal to arduino.",
-		"tech_row": ["Android"],
-		"link": [
-			{
-				"type": "Github",
-				"href": "https://github.com/TingNgs/ColorPlayer"
-			},
-			{
-				"type": "About",
-				"href": "https://github.com/TingNgs/ColorPlayer/blob/master/%E8%AA%AA%E6%98%8E.pdf"
-			}
-		],
-		"img": "./img/portfolio/colorpella.jpeg"
-	},
-	{
-		"name": "NTUT Empty Classroom",
-		"description": "Android final project. An android app use for search empty classroom in NTUT.",
-		"tech_row": ["Android", "Firebase"],
-		"link": [
-			{
-				"type": "Github",
-				"href": "https://github.com/TingNgs/ntutAndroidFinal"
-			}
-		],
-		"img": "./img/portfolio/NTUT_emptyClassroom.png"
-	}
+  {
+    "name": "LoopStationWeb",
+    "description": "Independent study (Special Project) for my bachelor's degree. A web app can create complete songs by layering your recordings on web browser.",
+    "tech_row": ["JavaScript", "jQuery"],
+    "link": [
+      { "type": "Github", "href": "https://github.com/TingNgs/LoopStationWeb" },
+      {
+        "type": "Play Demo",
+        "href": "https://tingngs.github.io/LoopStationWeb/"
+      }
+    ],
+    "img": "./img/portfolio/LoopStationWeb.png"
+  },
+  {
+    "name": "sgngs.com",
+    "description": "My personal resume websit. (This Website)",
+    "tech_row": ["SCSS", "Google API"],
+    "link": [{ "type": "Github", "href": "https://github.com/TingNgs/sgngs" }],
+    "img": "./img/portfolio/sgngs.png"
+  },
+  {
+    "name": "TT-iwatchStore",
+    "description": "Database and Information Security final project. Build a e-commerce system that sell smart watch.",
+    "tech_row": ["PHP", "MySQL"],
+    "link": [
+      {
+        "type": "Github",
+        "href": "https://github.com/thianhe/TT-iwatchStore"
+      },
+      { "type": "Demo Video", "href": "https://youtu.be/3xBdWTHWdL0" }
+    ],
+    "img": "./img/portfolio/tt-iwatch.png"
+  },
+  {
+    "name": "Imitation Game - The Binding of Isaac",
+    "description": "Oop Lab final project. Imitate a game (The Binding of Isaac) by using professor's JS framework.",
+    "tech_row": ["JavaScript"],
+    "link": [
+      { "type": "Github", "href": "https://github.com/thianhe/OopLab" },
+      { "type": "Play Demo", "href": "https://thianhe.github.io/OopLab/" }
+    ],
+    "img": "./img/portfolio/isaac.png"
+  },
+  {
+    "name": "NTUT HKST",
+    "description": "Web programming final project. A register system for NTUT's oversea chinese student.",
+    "tech_row": ["Firebase"],
+    "link": [
+      {
+        "type": "Github",
+        "href": "https://github.com/TingNgs/FinalWebProject"
+      },
+      {
+        "type": "Demo",
+        "href": "https://TingNgs.github.io/FinalWebProject/"
+      }
+    ],
+    "img": "./img/portfolio/ntut_hksd.png"
+  },
+  {
+    "name": "Colorpella",
+    "description": "Freelance android app. An android app detect color and sound frequency to send signal to arduino.",
+    "tech_row": ["Android"],
+    "link": [
+      {
+        "type": "Github",
+        "href": "https://github.com/TingNgs/ColorPlayer"
+      },
+      {
+        "type": "About",
+        "href": "https://github.com/TingNgs/ColorPlayer/blob/master/%E8%AA%AA%E6%98%8E.pdf"
+      }
+    ],
+    "img": "./img/portfolio/colorpella.jpeg"
+  },
+  {
+    "name": "NTUT Empty Classroom",
+    "description": "Android final project. An android app use for search empty classroom in NTUT.",
+    "tech_row": ["Android", "Firebase"],
+    "link": [
+      {
+        "type": "Github",
+        "href": "https://github.com/TingNgs/ntutAndroidFinal"
+      }
+    ],
+    "img": "./img/portfolio/NTUT_emptyClassroom.png"
+  }
 ]
