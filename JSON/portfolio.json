@@ -1,5 +1,17 @@
 [
   {
+    "name": "ViVi.wAwA",
+    "description": "Side project. A web base music player.\n\nTesting account:\nEmail: test@test.com\nPassword: 123123123",
+    "tech_row": ["React", "Redux"],
+    "link": [
+      {
+        "type": "Play Demo",
+        "href": "https://music-8cc1e.firebaseapp.com"
+      }
+    ],
+    "img": "./img/portfolio/LoopStationWeb.png"
+  },
+  {
     "name": "LoopStationWeb",
     "description": "Independent study (Special Project) for my bachelor's degree. A web app can create complete songs by layering your recordings on web browser.",
     "tech_row": ["JavaScript", "jQuery"],
